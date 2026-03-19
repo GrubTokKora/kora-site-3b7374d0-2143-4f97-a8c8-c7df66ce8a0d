@@ -1,0 +1,344 @@
+```html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAIPORE Xpress - Authentic Indian Cuisine in Ridgefield, CT</title>
+    <meta name="description" content="JAIPORE Xpress, The To-Go Indian, tempts the taste buds of CT with a full take on authentic Indian food. Located at 19 Bailey Ave, Ridgefield, CT.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.jaiporexpress.com/">
+    <meta property="og:title" content="JAIPORE Xpress - Authentic Indian Cuisine in Ridgefield, CT">
+    <meta property="og:description" content="JAIPORE Xpress, The To-Go Indian, tempts the taste buds of CT with a full take on authentic Indian food.">
+    <meta property="og:image" content="http://www.jaiporexpress.com/images/gallery/2.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://www.jaiporexpress.com/">
+    <meta property="twitter:title" content="JAIPORE Xpress - Authentic Indian Cuisine in Ridgefield, CT">
+    <meta property="twitter:description" content="JAIPORE Xpress, The To-Go Indian, tempts the taste buds of CT with a full take on authentic Indian food.">
+    <meta property="twitter:image" content="http://www.jaiporexpress.com/images/gallery/2.jpg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#D81B60',
+                        secondary: '#f8fafc',
+                        accent: '#ec4899',
+                    },
+                    fontFamily: {
+                        sans: ['"Helvetica Neue"', 'Arial', 'sans-serif'],
+                        serif: ['Georgia', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('http://www.jaiporexpress.com/images/gallery/2.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "JAIPORE Xpress",
+      "image": "http://www.jaiporexpress.com/images/logo.png",
+      "@id": "http://www.jaiporexpress.com/",
+      "url": "http://www.jaiporexpress.com/",
+      "telephone": "+1-203-403-3997",
+      "priceRange": "$$",
+      "servesCuisine": "Indian",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "19 Bailey Ave",
+        "addressLocality": "Ridgefield",
+        "addressRegion": "CT",
+        "postalCode": "06877",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.2818293,
+        "longitude": -73.4974508
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "11:30",
+          "closes": "21:00"
+        }
+      ],
+      "review": [
+        {
+          "@type": "Review",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "Jen B."
+          },
+          "reviewBody": "Delicious flavorful Indian food! I have been hearing about how phenomenal Jaipore is and I finally had a chance to eat their food and I can tell you that this will be a new regular for me, I was blown away by how delicious it was."
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-secondary text-gray-800">
+
+    <!-- Header -->
+    <header id="home" class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-2">
+                <img src="http://www.jaiporexpress.com/images/logo.png" alt="JAIPORE Xpress Logo" class="h-12">
+                <span class="text-xl font-bold text-gray-800 hidden sm:block">JAIPORE Xpress</span>
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="text-gray-600 hover:text-primary transition">About</a>
+                <a href="#gallery" class="text-gray-600 hover:text-primary transition">Gallery</a>
+                <a href="#reviews" class="text-gray-600 hover:text-primary transition">Reviews</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary transition">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="https://www.toasttab.com/jaiporexpress" target="_blank" class="bg-primary text-white px-4 py-2 rounded-full hover:bg-accent transition text-sm font-semibold">Order Online</a>
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-600 hover:text-primary focus:outline-none">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="#about" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-100">About</a>
+            <a href="#gallery" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-100">Gallery</a>
+            <a href="#reviews" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-100">Reviews</a>
+            <a href="#contact" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white">
+            <div class="container mx-auto px-6 py-32 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold font-serif leading-tight mb-4">Authentic Indian Cuisine To-Go</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">The To-Go Indian seeks to tempt the taste buds of CT by offering a full take on Indian food with a nod to the authentic culture and vibe of India.</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="https://www.toasttab.com/jaiporexpress" target="_blank" class="bg-primary text-white px-8 py-3 rounded-full hover:bg-accent transition font-semibold">Order Online</a>
+                    <a href="tel:+12034033997" class="bg-white text-primary px-8 py-3 rounded-full hover:bg-gray-200 transition font-semibold">Call Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Offer Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold font-serif text-gray-800">The JAIPORE Xpress Story</h2>
+                    <p class="text-gray-600 mt-2">Experience the authentic taste of India, right here in Connecticut.</p>
+                </div>
+                <div class="bg-pink-50 border-l-4 border-primary p-6 rounded-r-lg">
+                    <h3 class="text-2xl font-bold text-primary mb-2">COMING SOON!</h3>
+                    <p class="text-lg text-gray-700">We're excited to announce two new locations are on their way:</p>
+                    <ul class="list-disc list-inside mt-2 text-gray-700">
+                        <li>New Fairfield, CT</li>
+                        <li>Brookfield, CT</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-20 bg-secondary">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold font-serif text-gray-800">Our Gallery</h2>
+                    <p class="text-gray-600 mt-2">A glimpse of our delicious dishes and vibrant atmosphere.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="overflow-hidden rounded-lg shadow-lg"><img src="http://www.jaiporexpress.com/images/gallery/1.jpg" alt="Gallery Image 1" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-300"></div>
+                    <div class="overflow-hidden rounded-lg shadow-lg"><img src="http://www.jaiporexpress.com/images/gallery/3.jpg" alt="Gallery Image 3" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-300"></div>
+                    <div class="overflow-hidden rounded-lg shadow-lg"><img src="http://www.jaiporexpress.com/images/gallery/4.jpg" alt="Gallery Image 4" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-300"></div>
+                    <div class="overflow-hidden rounded-lg shadow-lg"><img src="http://www.jaiporexpress.com/images/gallery/5.jpg" alt="Gallery Image 5" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-300"></div>
+                    <div class="overflow-hidden rounded-lg shadow-lg"><img src="http://www.jaiporexpress.com/images/gallery/6.jpg" alt="Gallery Image 6" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-300"></div>
+                    <div class="overflow-hidden rounded-lg shadow-lg"><img src="http://www.jaiporexpress.com/images/gallery/8.jpg" alt="Gallery Image 8" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-300"></div>
+                    <div class="overflow-hidden rounded-lg shadow-lg"><img src="http://www.jaiporexpress.com/images/gallery/10.jpg" alt="Gallery Image 10" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-300"></div>
+                    <div class="overflow-hidden rounded-lg shadow-lg"><img src="http://www.jaiporexpress.com/images/gallery/12.jpg" alt="Gallery Image 12" class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-300"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold font-serif text-gray-800">What Our Customers Say</h2>
+                    <p class="text-gray-600 mt-2">We're proud of our 4.9-star rating from over 500 reviews!</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="bg-secondary p-6 rounded-lg shadow-md flex flex-col">
+                        <div class="flex items-center mb-4">
+                            <img src="https://lh3.googleusercontent.com/a-/ALV-UjV6a4XS48GUCPmWFNMJ3-aGwlAGUouNf5SEEl5QeWSZ2jKr8BusgA=s128-c0x00000000-cc-rp-mo-ba7" alt="Jen B." class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <p class="font-semibold">Jen B.</p>
+                                <div class="flex text-yellow-500">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm flex-grow">"Delicious flavorful Indian food! I have been hearing about how phenomenal Jaipore is and I finally had a chance to eat their food and I can tell you that this will be a new regular for me, I was blown away by how delicious it was."</p>
+                    </div>
+
+                    <div class="bg-secondary p-6 rounded-lg shadow-md flex flex-col">
+                        <div class="flex items-center mb-4">
+                            <img src="https://lh3.googleusercontent.com/a-/ALV-UjUVLmOyYjgBBPvdRXWOPBv7iaP_JWe_hHOFUXcRACKkZYGoYuOn=s128-c0x00000000-cc-rp-mo-ba3" alt="Maria S" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <p class="font-semibold">Maria S</p>
+                                <div class="flex text-yellow-500">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm flex-grow">"This is easily one of the best Indian restaurants I’ve been to... Every dish was flavorful, fresh, and perfectly prepared. The service was just as good. The person helping us was genuinely kind and attentive, which made the experience even better."</p>
+                    </div>
+
+                    <div class="bg-secondary p-6 rounded-lg shadow-md flex flex-col">
+                        <div class="flex items-center mb-4">
+                            <img src="https://lh3.googleusercontent.com/a-/ALV-UjVbSL5UOYPGxEu4JiBnFDlO8h_-KteaV6ldDbxW3vIBpeADOvd3hA=s128-c0x00000000-cc-rp-mo-ba5" alt="AFP" class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <p class="font-semibold">AFP</p>
+                                <div class="flex text-yellow-500">
+                                    <i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i><i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 text-sm flex-grow">"An Absolute New England gem. A tribute to Indian cuisine with a hat-tip to the selective use of ‘spices’... Wonderful experience!!! Definitely will visit to enjoy their cuisine in a ambience reminiscent of ‘British Raj.’"</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Hours Section -->
+        <section id="contact" class="py-20 bg-secondary">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold font-serif text-gray-800">Visit Us</h2>
+                    <p class="text-gray-600 mt-2">We look forward to serving you.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold mb-6">Hours & Location</h3>
+                        <div class="space-y-4 text-gray-700">
+                            <div class="flex items-start">
+                                <i data-lucide="map-pin" class="w-5 h-5 mr-3 mt-1 text-primary"></i>
+                                <div>
+                                    <p class="font-semibold">JAIPORE Xpress</p>
+                                    <p>19 Bailey Ave, Ridgefield, CT 06877, USA</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-lucide="clock" class="w-5 h-5 mr-3 mt-1 text-primary"></i>
+                                <div>
+                                    <p class="font-semibold">Open Daily</p>
+                                    <p>11:30 AM – 9:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-lucide="phone" class="w-5 h-5 mr-3 mt-1 text-primary"></i>
+                                <div>
+                                    <p class="font-semibold">Phone</p>
+                                    <a href="tel:+12034033997" class="hover:text-primary">(203) 403-3997</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i data-lucide="mail" class="w-5 h-5 mr-3 mt-1 text-primary"></i>
+                                <div>
+                                    <p class="font-semibold">Email</p>
+                                    <a href="mailto:info@jaiporect.com" class="hover:text-primary">info@jaiporect.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-96 lg:h-full rounded-lg overflow-hidden shadow-md">
+                        <iframe
+                            class="w-full h-full"
+                            loading="lazy"
+                            allowfullscreen
+                            referrerpolicy="no-referrer-when-downgrade"
+                            src="https://maps.google.com/maps?q=JAIPORE%20Xpress%2C%2019%20Bailey%20Ave%2C%20Ridgefield%2C%20CT%2006877&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h4 class="font-bold text-lg mb-2">JAIPORE Xpress</h4>
+                    <p class="text-sm text-gray-400">19 Bailey Ave<br>Ridgefield, CT 06877</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-2">Contact</h4>
+                    <p class="text-sm"><a href="tel:+12034033997" class="text-gray-400 hover:text-white">(203) 403-3997</a></p>
+                    <p class="text-sm"><a href="mailto:info@jaiporect.com" class="text-gray-400 hover:text-white">info@jaiporect.com</a></p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-2">Follow Us</h4>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="https://www.instagram.com/jaiporexpress/" target="_blank" class="text-gray-400 hover:text-white"><i data-lucide="instagram"></i></a>
+                        <a href="https://www.facebook.com/jaiporexpress/" target="_blank" class="text-gray-400 hover:text-white"><i data-lucide="facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-500">
+                <p>&copy; 2024 JAIPORE Xpress. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
+```

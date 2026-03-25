@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaipore Xpress | Modern Indian Eatery</title>
+    <meta name="description" content="Jaipore Xpress brings authentic Indian cuisine to Connecticut and New York. Order takeout and delivery from multiple locations.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" id="canonical-link" href="/">
     <link rel="icon" type="image/png" href="https://jaiporexpress.com/images/favicon.png">
+    <link rel="preconnect" href="https://jaiporexpress.com" crossorigin>
     <link rel="preload" as="image" href="https://jaiporexpress.com/images/slider/1.jpg">
-    <link rel="preload" as="image" href="https://jaiporexpress.com/images/slider/2.jpg">
-    <link rel="preload" as="image" href="https://jaiporexpress.com/images/slider/3.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jaipore Xpress | Modern Indian Eatery">
+    <meta property="og:description" content="Jaipore Xpress brings authentic Indian cuisine to Connecticut and New York. Order takeout and delivery from multiple locations.">
+    <meta property="og:url" content="https://jaiporexpress.com/">
+    <meta property="og:image" content="https://jaiporexpress.com/images/slider/1.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jaipore Xpress | Modern Indian Eatery">
+    <meta name="twitter:description" content="Jaipore Xpress brings authentic Indian cuisine to Connecticut and New York. Order takeout and delivery from multiple locations.">
+    <meta name="twitter:image" content="https://jaiporexpress.com/images/slider/1.jpg">
+    <meta name="theme-color" content="#D4AF37">
+    <script>
+        // Canonical URL set dynamically per your instruction:
+        // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link#canonical
+        try {
+            const canonical = document.getElementById('canonical-link');
+            if (canonical) canonical.href = window.location.origin;
+        } catch (e) {}
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -134,6 +154,111 @@
             }
         }
     </style>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Restaurant",
+              "@id": "https://jaiporexpress.com/#ridgefield",
+              "name": "Jaipore Xpress - Ridgefield",
+              "servesCuisine": ["Indian"],
+              "telephone": "+12034033997",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "19 Bailey Ave",
+                "addressLocality": "Ridgefield",
+                "addressRegion": "CT",
+                "postalCode": "06877",
+                "addressCountry": "US"
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+                  "opens": "11:30",
+                  "closes": "20:30"
+                }
+              ]
+            },
+            {
+              "@type": "Restaurant",
+              "@id": "https://jaiporexpress.com/#briarcliff",
+              "name": "Jaipore Xpress - Briarcliff",
+              "servesCuisine": ["Indian"],
+              "telephone": "+19143734821",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1116 Pleasantville Rd",
+                "addressLocality": "Briarcliff",
+                "addressRegion": "NY",
+                "postalCode": "10510",
+                "addressCountry": "US"
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+                  "opens": "11:30",
+                  "closes": "21:00"
+                }
+              ]
+            },
+            {
+              "@type": "Restaurant",
+              "@id": "https://jaiporexpress.com/#guilford",
+              "name": "Jaipore Xpress - Guilford",
+              "servesCuisine": ["Indian"],
+              "telephone": "+12035337040",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "33 Water Street, Unit A",
+                "addressLocality": "Guilford",
+                "addressRegion": "CT",
+                "postalCode": "06437",
+                "addressCountry": "US"
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Sunday","Monday","Tuesday","Wednesday","Thursday"],
+                  "opens": "11:30",
+                  "closes": "20:30"
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Friday","Saturday"],
+                  "opens": "11:30",
+                  "closes": "21:00"
+                }
+              ]
+            },
+            {
+              "@type": "Restaurant",
+              "@id": "https://jaiporexpress.com/#bedford-hills",
+              "name": "Jaipore Xpress - Bedford Hills",
+              "servesCuisine": ["Indian"],
+              "telephone": "+19142183262",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "740 N Bedford Rd",
+                "addressLocality": "Bedford Hills",
+                "addressRegion": "NY",
+                "postalCode": "10507",
+                "addressCountry": "US"
+              },
+              "openingHoursSpecification": [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+                  "opens": "11:30",
+                  "closes": "21:00"
+                }
+              ]
+            }
+          ]
+        }
+    </script>
 <base target="_blank">
 </head>
 <body class="bg-neutral-50 text-neutral-900 antialiased">
@@ -144,7 +269,7 @@
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center space-x-3">
                     <div class="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center">
-                        <img src="https://jaiporexpress.com/images/logo.png" alt="Jaipore Xpress logo" class="w-full h-full object-contain">
+                        <img src="https://jaiporexpress.com/images/logo.png" alt="Jaipore Xpress logo" width="175" height="175" decoding="async" class="w-full h-full object-contain">
                     </div>
                     <span class="font-display text-2xl font-bold text-white tracking-wide">Jaipore<span class="text-gold">Xpress</span></span>
                 </div>
@@ -222,9 +347,9 @@
     <!-- Hero Section -->
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <div class="absolute inset-0">
-            <img src="https://jaiporexpress.com/images/slider/1.jpg" alt="Jaipore slider image 1" fetchpriority="high" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700 ease-linear">
-            <img src="https://jaiporexpress.com/images/slider/2.jpg" alt="Jaipore slider image 2" loading="eager" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700 ease-linear">
-            <img src="https://jaiporexpress.com/images/slider/3.jpg" alt="Jaipore slider image 3" loading="eager" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700 ease-linear">
+            <img src="https://jaiporexpress.com/images/slider/1.jpg" alt="Jaipore slider image 1" fetchpriority="high" loading="eager" width="1920" height="1280" decoding="async" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-700 ease-linear">
+            <img src="https://jaiporexpress.com/images/slider/2.jpg" alt="Jaipore slider image 2" loading="lazy" width="1920" height="1280" decoding="async" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700 ease-linear">
+            <img src="https://jaiporexpress.com/images/slider/3.jpg" alt="Jaipore slider image 3" loading="lazy" width="1920" height="1280" decoding="async" class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-700 ease-linear">
         </div>
         <div class="absolute inset-0 bg-black/65"></div>
         
@@ -272,6 +397,7 @@
                     <div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-4 border-r-4 border-gold"></div>
                     <img src="https://kimi-web-img.moonshot.cn/img/s3-media0.fl.yelpcdn.com/7970ddda4a1ee83b94f407989a0371a65f8e0099.jpg" 
                          alt="Jaipore Xpress Interior" 
+                         width="348" height="348" decoding="async"
                          class="w-full h-[500px] object-cover rounded-lg shadow-2xl">
                     <div class="absolute -bottom-6 -right-6 bg-gold text-black p-6 rounded-lg shadow-xl hidden md:block">
                         <p class="font-display text-3xl font-bold">15+</p>
@@ -359,6 +485,18 @@
             <div id="menu-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Menu items will be populated by JavaScript -->
             </div>
+            <noscript>
+                <div class="mt-8 bg-neutral-800 border border-neutral-700 rounded-2xl p-6">
+                    <h3 class="font-display text-xl font-bold text-white mb-4">Menu Highlights</h3>
+                    <ul class="space-y-2 text-neutral-300 text-sm">
+                        <li><strong class="text-gold">Appetizers:</strong> Samosa, Paneer Tikka</li>
+                        <li><strong class="text-gold">Entrees:</strong> Butter Chicken, Palak Paneer, Biryani</li>
+                        <li><strong class="text-gold">Breads:</strong> Naan, Garlic Naan, Paratha</li>
+                        <li><strong class="text-gold">Desserts:</strong> Gulab Jamun, Rasmalai, Kulfi</li>
+                    </ul>
+                    <p class="text-neutral-500 text-xs mt-4">Full menu requires JavaScript.</p>
+                </div>
+            </noscript>
 
             <!-- Lunch Special Note -->
             <div class="mt-16 text-center bg-gold/10 border border-gold/30 rounded-2xl p-8 max-w-3xl mx-auto">
@@ -476,16 +614,16 @@
                         <h4 class="font-display text-xl font-bold text-neutral-900 mb-6">Ridgefield, CT</h4>
                         <div class="flex flex-wrap justify-center gap-4">
                             <a href="https://www.toasttab.com/jaiporexpress/v2/online-order#!" target="_blank" rel="noopener noreferrer" class="delivery-badge">
-                                <img src="https://jaiporexpress.com/images/directorder-ridgefield.png" alt="Direct Order">
+                                <img src="https://jaiporexpress.com/images/directorder-ridgefield.png" alt="Direct Order" width="300" height="150" decoding="async">
                             </a>
                             <a href="https://www.grubhub.com/restaurant/jaipore-xpress-19-bailey-ave-ridgefield/527852" target="_blank" rel="noopener noreferrer" class="delivery-badge">
-                                <img src="https://jaiporexpress.com/images/grubhub-ridgefield.png" alt="GrubHub">
+                                <img src="https://jaiporexpress.com/images/grubhub-ridgefield.png" alt="GrubHub" width="300" height="150" decoding="async">
                             </a>
                             <a href="https://www.ubereats.com/store/jaipore-express/Ojh63bERQ9CUo8wR3qRvXQ" target="_blank" rel="noopener noreferrer" class="delivery-badge">
-                                <img src="https://jaiporexpress.com/images/ubereats-ridgefield.png" alt="UberEats">
+                                <img src="https://jaiporexpress.com/images/ubereats-ridgefield.png" alt="UberEats" width="300" height="150" decoding="async">
                             </a>
                             <a href="https://www.doordash.com/store/jaipore-xpress-ridgefield-24458344/" target="_blank" rel="noopener noreferrer" class="delivery-badge">
-                                <img src="https://jaiporexpress.com/images/doordash-ridgefield.png" alt="DoorDash">
+                                <img src="https://jaiporexpress.com/images/doordash-ridgefield.png" alt="DoorDash" width="300" height="150" decoding="async">
                             </a>
                         </div>
                     </div>
@@ -495,16 +633,16 @@
                         <h4 class="font-display text-xl font-bold text-neutral-900 mb-6">Briarcliff, NY</h4>
                         <div class="flex flex-wrap justify-center gap-4">
                             <a href="https://www.toasttab.com/jaiporepressny2/v2/online-order#!" target="_blank" rel="noopener noreferrer" class="delivery-badge">
-                                <img src="https://jaiporexpress.com/images/directorder-briarcliff.png" alt="Direct Order">
+                                <img src="https://jaiporexpress.com/images/directorder-briarcliff.png" alt="Direct Order" width="300" height="150" decoding="async">
                             </a>
                             <a href="https://www.grubhub.com/restaurant/jaipore-xpress-1116-pleasantville-rd-briarcliff-manor/6034302" target="_blank" rel="noopener noreferrer" class="delivery-badge">
-                                <img src="https://jaiporexpress.com/images/grubhub-briarcliff.png" alt="GrubHub">
+                                <img src="https://jaiporexpress.com/images/grubhub-briarcliff.png" alt="GrubHub" width="300" height="150" decoding="async">
                             </a>
                             <a href="https://www.ubereats.com/store/jaipore-xpress-briarcliff/TV2SaSHzWWYnjtpy7DKnMQ" target="_blank" rel="noopener noreferrer" class="delivery-badge">
-                                <img src="https://jaiporexpress.com/images/ubereats-briarcliff.png" alt="UberEats">
+                                <img src="https://jaiporexpress.com/images/ubereats-briarcliff.png" alt="UberEats" width="300" height="150" decoding="async">
                             </a>
                             <a href="https://www.doordash.com/store/jaipore-xpress-briarcliff-manor-24458344/" target="_blank" rel="noopener noreferrer" class="delivery-badge">
-                                <img src="https://jaiporexpress.com/images/doordash-briarcliff.png" alt="DoorDash">
+                                <img src="https://jaiporexpress.com/images/doordash-briarcliff.png" alt="DoorDash" width="300" height="150" decoding="async">
                             </a>
                         </div>
                     </div>
@@ -514,13 +652,13 @@
                         <h4 class="font-display text-xl font-bold text-neutral-900 mb-6">Guilford, CT</h4>
                         <div class="flex flex-wrap justify-center gap-4">
                             <a href="https://www.toasttab.com/jaipore-express-guilford/v2/online-order#!" target="_blank" rel="noopener noreferrer" class="delivery-badge">
-                                <img src="https://jaiporexpress.com/images/directorder-guilford.png" alt="Direct Order">
+                                <img src="https://jaiporexpress.com/images/directorder-guilford.png" alt="Direct Order" width="300" height="150" decoding="async">
                             </a>
                             <a href="https://www.grubhub.com/restaurant/jaipore-express-33-water-st-guilford/6034303" target="_blank" rel="noopener noreferrer" class="delivery-badge">
-                                <img src="https://jaiporexpress.com/images/grubhub-guilford.png" alt="GrubHub">
+                                <img src="https://jaiporexpress.com/images/grubhub-guilford.png" alt="GrubHub" width="300" height="150" decoding="async">
                             </a>
                             <a href="https://www.doordash.com/store/jaipore-express-guilford-24458345/" target="_blank" rel="noopener noreferrer" class="delivery-badge">
-                                <img src="https://jaiporexpress.com/images/doordash-guilford.png" alt="DoorDash">
+                                <img src="https://jaiporexpress.com/images/doordash-guilford.png" alt="DoorDash" width="300" height="150" decoding="async">
                             </a>
                         </div>
                     </div>
@@ -530,13 +668,13 @@
                         <h4 class="font-display text-xl font-bold text-neutral-900 mb-6">Bedford Hills, NY</h4>
                         <div class="flex flex-wrap justify-center gap-4">
                             <a href="https://www.toasttab.com/jaiporebedford/v2/online-order#!" target="_blank" rel="noopener noreferrer" class="delivery-badge">
-                                <img src="https://jaiporexpress.com/images/directorder-bedford.png" alt="Direct Order">
+                                <img src="https://jaiporexpress.com/images/directorder-bedford.png" alt="Direct Order" width="300" height="150" decoding="async">
                             </a>
                             <a href="https://www.grubhub.com/restaurant/jaipore-express-740-n-bedford-rd-bedford-hills/6034304" target="_blank" rel="noopener noreferrer" class="delivery-badge">
-                                <img src="https://jaiporexpress.com/images/grubhub-bedford.png" alt="GrubHub">
+                                <img src="https://jaiporexpress.com/images/grubhub-bedford.png" alt="GrubHub" width="300" height="150" decoding="async">
                             </a>
                             <a href="https://www.doordash.com/store/jaipore-express-bedford-hills-24458346/" target="_blank" rel="noopener noreferrer" class="delivery-badge">
-                                <img src="https://jaiporexpress.com/images/doordash-bedford.png" alt="DoorDash">
+                                <img src="https://jaiporexpress.com/images/doordash-bedford.png" alt="DoorDash" width="300" height="150" decoding="async">
                             </a>
                         </div>
                     </div>
@@ -555,31 +693,31 @@
             </div>
 
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3">
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/1.jpg" alt="Jaipore gallery 1" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/2.jpg" alt="Jaipore gallery 2" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/3.jpg" alt="Jaipore gallery 3" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/4.jpg" alt="Jaipore gallery 4" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/5.jpg" alt="Jaipore gallery 5" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/6.jpg" alt="Jaipore gallery 6" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/7.jpg" alt="Jaipore gallery 7" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/8.jpg" alt="Jaipore gallery 8" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/9.jpg" alt="Jaipore gallery 9" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/10.jpg" alt="Jaipore gallery 10" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/11.jpg" alt="Jaipore gallery 11" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/12.jpg" alt="Jaipore gallery 12" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/13.jpg" alt="Jaipore gallery 13" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/14.jpg" alt="Jaipore gallery 14" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/15.jpg" alt="Jaipore gallery 15" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/16.jpg" alt="Jaipore gallery 16" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/18.jpg" alt="Jaipore gallery 18" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/19.jpg" alt="Jaipore gallery 19" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/20.jpg" alt="Jaipore gallery 20" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/21.jpg" alt="Jaipore gallery 21" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/22.jpg" alt="Jaipore gallery 22" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/23.jpg" alt="Jaipore gallery 23" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/24.jpg" alt="Jaipore gallery 24" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/25.jpg" alt="Jaipore gallery 25" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
-                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/26.jpg" alt="Jaipore gallery 26" loading="lazy" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/1.jpg" alt="Jaipore gallery 1" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/2.jpg" alt="Jaipore gallery 2" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/3.jpg" alt="Jaipore gallery 3" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/4.jpg" alt="Jaipore gallery 4" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/5.jpg" alt="Jaipore gallery 5" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/6.jpg" alt="Jaipore gallery 6" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/7.jpg" alt="Jaipore gallery 7" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/8.jpg" alt="Jaipore gallery 8" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/9.jpg" alt="Jaipore gallery 9" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/10.jpg" alt="Jaipore gallery 10" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/11.jpg" alt="Jaipore gallery 11" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/12.jpg" alt="Jaipore gallery 12" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/13.jpg" alt="Jaipore gallery 13" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/14.jpg" alt="Jaipore gallery 14" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/15.jpg" alt="Jaipore gallery 15" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/16.jpg" alt="Jaipore gallery 16" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/18.jpg" alt="Jaipore gallery 18" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/19.jpg" alt="Jaipore gallery 19" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/20.jpg" alt="Jaipore gallery 20" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/21.jpg" alt="Jaipore gallery 21" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/22.jpg" alt="Jaipore gallery 22" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/23.jpg" alt="Jaipore gallery 23" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/24.jpg" alt="Jaipore gallery 24" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/25.jpg" alt="Jaipore gallery 25" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
+                <div class="relative group overflow-hidden rounded aspect-square"><img src="https://jaiporexpress.com/images/gallery/26.jpg" alt="Jaipore gallery 26" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"></div>
             </div>
         </div>
     </section>
@@ -591,7 +729,7 @@
                 <div class="col-span-2">
                     <div class="flex items-center space-x-3 mb-6">
                         <div class="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center">
-                            <img src="https://jaiporexpress.com/images/logo.png" alt="Jaipore Xpress logo" class="w-full h-full object-contain">
+                            <img src="https://jaiporexpress.com/images/logo.png" alt="Jaipore Xpress logo" width="175" height="175" decoding="async" class="w-full h-full object-contain">
                         </div>
                         <span class="font-display text-2xl font-bold tracking-wide">Jaipore<span class="text-gold">Xpress</span></span>
                     </div>
@@ -600,10 +738,14 @@
                     </p>
                     <div class="flex space-x-4">
                         <a href="https://www.facebook.com/jaiporexpress/" class="w-10 h-10 rounded-full bg-neutral-800 flex items-center justify-center hover:bg-gold hover:text-black transition-all">
-                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/>
+                            </svg>
                         </a>
                         <a href="https://www.instagram.com/jaiporexpress/" class="w-10 h-10 rounded-full bg-neutral-800 flex items-center justify-center hover:bg-gold hover:text-black transition-all">
-                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                <path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.069-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.8053.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6811 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6816-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/>
+                            </svg>
                         </a>
                         <a href="https://maps.app.goo.gl/bHgEVaQ6c2wdRD5V9" class="w-10 h-10 rounded-full bg-neutral-800 flex items-center justify-center hover:bg-gold hover:text-black transition-all" aria-label="Google">
                             <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -725,8 +867,6 @@
                 `;
                 grid.appendChild(card);
             });
-            
-            lucide.createIcons();
         }
 
         // Filter Function
@@ -808,14 +948,17 @@
         });
 
         // Navbar scroll effect
+        const nav = document.querySelector('nav');
+        let navShadowTicking = false;
         window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('shadow-lg');
-            } else {
-                nav.classList.remove('shadow-lg');
-            }
-        });
+            if (navShadowTicking) return;
+            navShadowTicking = true;
+            window.requestAnimationFrame(() => {
+                const shouldShadow = window.scrollY > 50;
+                nav?.classList.toggle('shadow-lg', shouldShadow);
+                navShadowTicking = false;
+            });
+        }, { passive: true });
 
         // Ensure mobile menu closes on desktop widths
         window.addEventListener('resize', () => {
